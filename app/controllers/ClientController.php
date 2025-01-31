@@ -30,23 +30,21 @@ class ClientController {
         $log=Flight::request()->data->log;
         $pwd=Flight::request()->data->pwd;
 		$login=Flight::Client()->login($log,$pwd,$column);
-        if($login===true) {
-			$tablename="client_habitation";
-			$condition="WHERE %s='%s' AND mdp='%s'";
-			$condition=sprintf($condition,$column,$log,$pwd);
-			$client=Flight::General()->getAll($tablename,$condition);
-			$_SESSION['client']=$client[0]['id_client'];
-			$this->pageHome();
-		}
-		else{
-			if($login==0) {
-				$retour=['page'=>'loginByMail','error'=>'0'];
-				Flight::render('frontoffice/connection/template',$retour);
-			}
-			else if($login==false) {
+		if(isset($login)) {
+			if($login===true) {
+				$tablename="client_habitation";
+				$condition="WHERE %s='%s' AND mdp='%s'";
+				$condition=sprintf($condition,$column,$log,$pwd);
+				$client=Flight::General()->getAll($tablename,$condition);
+				$_SESSION['client']=$client[0]['id_client'];
+				$this->pageHome();
+			} else {
 				$retour=['page'=>'loginByMail','error'=>'1'];
 				Flight::render('frontoffice/connection/template',$retour);
-			}	
+			}
+		} else { 
+				$retour=['page'=>'loginByMail','error'=>'0'];
+				Flight::render('frontoffice/connection/template',$retour);		
 		}
     }
 

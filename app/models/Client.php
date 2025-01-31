@@ -26,7 +26,7 @@ class Client {
         $condition='WHERE %s="%s"';
         $condition=sprintf($condition,$columnName,$log);
         $clients = $this->general->getAll($tablename,$condition);
-        if(!isset($clients)) {return 0;}
+        if(!isset($clients)) {return null;}
         else {     //si aucun utilisateur
             foreach($clients as $client) {      //si il y a utilisateur(s)
                 if($client['mdp']==$pwd) {
