@@ -1,7 +1,7 @@
 <div>
     <form action="<?= $base_url ?>/traitementLogin" method="post">
         <label for="log">Mail</label>
-        <input type="mail" name="log" required>
+        <input type="email" name="log" required>
         <label for="pwd">Mot de passe</label>
         <input type="password" name="pwd" required>
         <input type="hidden" name="column" value="mail">
