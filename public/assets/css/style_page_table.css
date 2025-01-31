@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+h4{
+    color: #3e7b3d;
+    text-decoration: underline;
+}
+.nom{
+    color: #436337;
+}
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+table {
+    width: 90%; /* Adjust the width as needed */
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+th {
+    background-color: #5a9b41;
+}
+
+a {
+    color: #3e7b3d; /* Bootstrap's primary color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 10px;
+}
+.customs{
+    justify-content: center;
+}
+.bar{
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+}

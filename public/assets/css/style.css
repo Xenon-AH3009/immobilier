@@ -1,0 +1,35 @@
+.navbar-custom {
+    background-color: white; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure légère */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 10px 0; /* Espacement autour du header */
+}
+
+/* Centrer le formulaire de recherche */
+.navbar-form {
+    margin: 0; /* Retirer les marges par défaut */
+    padding: 0 15px; /* Ajouter du padding pour centrer correctement */
+}
+
+.navbar-form .form-control {
+    border-radius: 25px; /* Arrondir les bords du champ de recherche */
+    padding-left: 20px;
+}
+
+.navbar-form button {
+    border-radius: 50%; /* Rendre le bouton de recherche circulaire */
+    padding: 10px 15px;
+}
+
+/* Style pour les éléments du menu */
+.nav-pills > li > a {
+    padding: 10px 20px; /* Espacement autour des éléments du menu */
+    border-radius: 20px; /* Arrondir les coins des liens */
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur du texte */
+}
+
+.nav-pills > li > a:hover {
+    background-color: #f5f5f5; /* Fond clair au survol */
+    color: #007bff; /* Couleur du texte au survol */
+}

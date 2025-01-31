@@ -1,0 +1,82 @@
+body {
+    background-color: #7f8c8d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.null{
+    visibility: hidden;
+    height: 0vh;
+}
+
+.container {
+    max-width: 600px; /* Largeur maximale du formulaire */
+    background-color: #fff; /* Couleur de fond du conteneur */
+    padding: 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacement entre les groupes de champs */
+}
+
+.btn {
+    width: 100%; /* Largeur du bouton sur toute la largeur disponible */
+}
+
+.link {
+    text-align: center; /* Centrer le lien */
+    margin-top: 10px; /* Espacement du lien */
+}
+form {
+    max-width: 600px;
+    /* Largeur maximale du formulaire */
+    background-color: #fff;
+    /* Couleur de fond du formulaire */
+    padding: 20px;
+    /* Espacement intérieur */
+    border-radius: 8px;
+    /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    animation: fadeInDown 0.9s ease-out;
+    /* Animation de fadeInUp */
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    /* Largeur des champs de sélection et de texte */
+    padding: 8px;
+    /* Espacement intérieur */
+    margin-bottom: 10px;
+    /* Espacement en bas de chaque champ */
+    border: 1px solid #ccc;
+    /* Bordure légère */
+    border-radius: 4px;
+    /* Coins arrondis */
+}
